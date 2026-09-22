@@ -1,14 +1,24 @@
 print("Introduce tu fecha de nacimiento")
 nacimiento = int(input())
-edad = 18
+anyo_actual = 2026
+edad = anyo_actual - nacimiento
+mayor = 18
+menor = 14
 
-if nacimiento == edad:
-	print("Se te permite la asistencia")
+if edad >= mayor:
+    print("Se te permite la asistencia")
 
 else:
-	if nacimiento > edad:
-		print("Se te permite la asistencia")
-	else:
-		print("No se te permite la asistencia")
-		
-	 
+
+    if edad >= menor and edad < mayor:
+        print("Tienes autorización de tus padres?")
+        autorizacion = input()
+        
+        if autorizacion == "si":
+            
+            print("Se te permite la asistencia")
+            
+        else:
+            print("No se te permite la asistencia")
+    else:
+        print("No se te permite la entrada por ser menor de 18 años")
