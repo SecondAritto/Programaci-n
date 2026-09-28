@@ -1,0 +1,13 @@
+print("Introduce tu nombre ")
+nombre = input()
+print(nombre)
+
+if nombre = "Benjamin";
+	print("Hola amor de mi vida <3")
+
+elif nombre = "Jorge";
+	print("Hola amor de mi vida <3")
+
+else;
+	print("quien chota sos")
+
